@@ -7,11 +7,53 @@
 </head>
 <body>
     <script>
-        function circlearea(radius) {
+    function circlearea(radius) {
   const area = Math.PI * (Math.max(radius, 0) ** 2);
   console.log(`Area : ${area}`);
 }
 circlearea(10);
+//argument and return
+
+function circlearea(radius) {
+  const area = Math.PI * (Math.max(radius, 0) ** 2);
+  return area;
+}
+let result1 = circlearea(10);
+console.log("Area:", result1);
+
+//no argument but return
+function circlearea() {
+  const radius = 10; 
+  const area = Math.PI * (Math.max(radius, 0) ** 2);
+  return area;
+}
+
+let result2 = circlearea(); 
+console.log("Area:", result2); 
+
+//argument but not return
+function circlearea(radius) {
+  const area = Math.PI * (Math.max(radius, 0) ** 2);
+  console.log(`Area : ${area}`);
+}
+
+circlearea(10); 
+
+//no argument and no return
+function circlearea() {
+  const radius = 10; 
+  const area = Math.PI * (Math.max(radius, 0) ** 2);
+  console.log(`Area : ${area}`);
+}
+
+circlearea(); 
+
+
+
+
+
+
+
     </script>
 </body>
 </html>
